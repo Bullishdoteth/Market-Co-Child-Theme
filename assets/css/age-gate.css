@@ -1,0 +1,66 @@
+/* Bold Title */
+.age-gate__heading {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+    margin-bottom: 12px !important;
+}
+
+/* Subtitle */
+.age-gate__sub-heading {
+    font-size: 15px !important;
+    color: #555555 !important;
+    margin-bottom: 24px !important;
+}
+
+/* Side-by-Side Button Layout */
+.age-gate__buttons {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
+
+/* Shared Button Dimensions */
+.age-gate__submit {
+    width: 155px !important;
+    padding: 11px 0 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    border-radius: 2px !important;
+    cursor: pointer !important;
+    transition: opacity 0.2s ease !important;
+}
+
+/* Dark Red YES Button */
+.age-gate__submit--yes {
+    background-color: #6b1414 !important;
+    color: #ffffff !important;
+    border: 1px solid #6b1414 !important;
+}
+
+/* White Outlined NO Button */
+.age-gate__submit--no {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+    border: 1px solid #cccccc !important;
+}
+
+.age-gate__submit:hover {
+    opacity: 0.85 !important;
+}
+
+/* Make the Yes/No sub-question bold */
+body .age-gate__challenge {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    color: #797878 !important;
+    margin-bottom: 24px !important;
+}
+
+/* Color the highlighted 18 dark red */
+.age-gate__challenge .age-highlight {
+    color: #6b1414 !important;
+    font-weight: 700 !important;
+}
+

@@ -1,0 +1,100 @@
+
+/* =====================================
+    MARKET & CO. HERO CAROUSEL
+===================================== */
+
+.marketco-hero {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    overflow: hidden;
+
+    /* Swipe and drag support */
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.marketco-hero:active {
+    cursor: grabbing;
+}
+
+.marketco-track {
+    display: flex;
+    width: 100%;
+    min-height: inherit;
+    transition: transform 600ms ease-in-out;
+    will-change: transform;
+}
+
+.marketco-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 350px;
+    box-sizing: border-box;
+
+    /* Prevent unwanted image dragging */
+    -webkit-user-drag: none;
+}
+
+/* Keep Elementor template content within the slide */
+.marketco-slide > .elementor,
+.marketco-slide > .elementor-section,
+.marketco-slide > .e-con {
+    width: 100%;
+}
+
+/* Carousel navigation dots */
+.marketco-dots {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transform: translateX(-50%);
+}
+
+.marketco-dots button {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.marketco-dots button.active {
+    width: 24px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .marketco-hero,
+    .marketco-track,
+    .marketco-slide {
+        min-height: 150px !important;
+    }
+
+    .marketco-dots {
+        bottom: 8px;
+        gap: 6px;
+    }
+
+    .marketco-dots button {
+        width: 7px;
+        height: 7px;
+    }
+
+    .marketco-dots button.active {
+        width: 18px;
+    }
+}

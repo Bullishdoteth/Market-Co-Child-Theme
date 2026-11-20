@@ -1,0 +1,123 @@
+/* Category navigation item */
+.help-cat {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 16px 18px !important;
+    margin-bottom: 4px;
+    border-left: 3px solid transparent;
+    border-radius: 5px;
+    background: transparent;
+    transition: all 0.25s ease;
+}
+
+/* Category text */
+.help-cat .elementor-icon-list-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #424650;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+}
+
+/* Category icon */
+.help-cat .elementor-icon-list-icon {
+    font-size: 16px;
+    color: #424650;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.help-cat:hover {
+    background: #F7F8FA;
+    border-left-color: #E5E7EB;
+}
+
+/* Active category */
+.help-cat.active-cat {
+    background: #FFF6EC;
+    border-left: 3px solid #F68B1E;
+}
+
+/* Active text */
+.help-cat.active-cat .elementor-icon-list-text {
+    color: #E98216;
+    font-weight: 600;
+}
+
+/* Active icon */
+.help-cat.active-cat .elementor-icon-list-icon {
+    color: #E98216;
+}
+
+/* Hover text */
+.help-cat:hover .elementor-icon-list-text {
+    color: #222222;
+}
+
+/* Remove last item bottom spacing */
+.help-cat:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .help-cat {
+        padding: 13px 15px !important;
+    }
+
+    .help-cat .elementor-icon-list-text {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   MOBILE FAQ ACCORDION
+========================================= */
+
+@media (max-width: 767px) {
+
+    /* Category navigation */
+    .help-cat {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 15px !important;
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+
+    /* FAQ panel hidden by default */
+    [id^="faqs-"] {
+        display: none;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 12px;
+    }
+
+    /* Active FAQ panel */
+    [id^="faqs-"].mobile-faq-active {
+        display: block !important;
+        animation: faqSlideDown 0.3s ease;
+    }
+
+    /* Active category */
+    .help-cat.active-cat {
+        border-left: 3px solid #F68B1E;
+        background: #FFF6EC;
+    }
+
+    /* FAQ reveal animation */
+    @keyframes faqSlideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-6px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

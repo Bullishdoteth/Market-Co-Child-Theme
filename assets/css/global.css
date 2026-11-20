@@ -1,0 +1,23 @@
+/*
+ * Market & Co. Global Styles
+ * Global design tokens and reusable styles
+ */
+
+:root {
+    --market-primary: #2F6B3F;
+    --market-primary-dark: #245332;
+    --market-accent: #F2A65A;
+
+    --market-text: #252525;
+    --market-text-muted: #707070;
+
+    --market-background: #FFFFFF;
+    --market-surface: #F8F9F6;
+    --market-border: #E8EAE5;
+
+    --market-radius-sm: 6px;
+    --market-radius-md: 12px;
+    --market-radius-lg: 18px;
+
+    --market-container: 1200px;
+}
