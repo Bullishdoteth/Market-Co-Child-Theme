@@ -1,0 +1,234 @@
+
+/* ==========================================
+    MARKET & CO. - MINI CART CUSTOM STYLING
+========================================== */
+
+/* Cart panel */
+.elementor-menu-cart__main {
+    padding: 24px !important;
+    background: #FFFFFF;
+}
+
+/* Product list */
+.elementor-menu-cart__main .wpr-woo-mini-cart {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Individual product */
+.elementor-menu-cart__main .mini_cart_item {
+    display: flex !important;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #EEEEEE;
+    position: relative;
+}
+
+/* Product image wrapper */
+.elementor-menu-cart__main .wpr-mini-cart-image {
+    flex: 0 0 68px;
+    width: 68px;
+    height: 68px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #F7F7F7;
+}
+
+/* Product image */
+.elementor-menu-cart__main .wpr-mini-cart-image img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 0 !important;
+}
+
+/* Product details */
+.elementor-menu-cart__main .wpr-mini-cart-name-and-quantity {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-right: 16px;
+}
+
+/* Product name */
+.elementor-menu-cart__main .wpr-mini-cart-product-name {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.elementor-menu-cart__main .wpr-mini-cart-product-name a {
+    text-decoration: none !important;
+}
+
+.elementor-menu-cart__main .wpr-mini-cart-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #252525;
+    line-height: 1.4;
+    display: block;
+}
+
+/* Quantity and price */
+.elementor-menu-cart__main .wpr-mini-cart-quantity {
+    font-size: 12px;
+    color: #777777;
+    font-weight: 400;
+}
+
+.elementor-menu-cart__main .wpr-mini-cart-quantity .amount {
+    font-size: 13px;
+    font-weight: 600;
+    color: #222222;
+}
+
+/* Remove button */
+.elementor-menu-cart__main .wpr-mini-cart-remove {
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+
+.elementor-menu-cart__main .wpr-mini-cart-remove a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    color: #777777 !important;
+    font-size: 17px;
+    line-height: 1;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.elementor-menu-cart__main .wpr-mini-cart-remove a:hover {
+    background: #FCECEC;
+    color: #D93025 !important;
+}
+
+/* Separator */
+.elementor-menu-cart__main .wpr-mini-cart-separator {
+    display: none;
+}
+
+/* Subtotal section */
+.elementor-menu-cart__main .woocommerce-mini-cart__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 !important;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 14px;
+}
+
+.elementor-menu-cart__main .woocommerce-mini-cart__total strong {
+    font-size: 13px;
+    font-weight: 500;
+    color: #666666;
+}
+
+.elementor-menu-cart__main .woocommerce-mini-cart__total .amount {
+    font-size: 17px;
+    font-weight: 700;
+    color: #222222;
+}
+
+/* Cart action buttons */
+.elementor-menu-cart__main .woocommerce-mini-cart__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0 0 !important;
+}
+
+/* General button styling */
+.elementor-menu-cart__main .woocommerce-mini-cart__buttons .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 48px;
+    box-sizing: border-box;
+    padding: 12px 18px !important;
+    margin: 0 !important;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all 0.25s ease;
+}
+
+/* View cart button */
+.elementor-menu-cart__main .woocommerce-mini-cart__buttons .wc-forward:not(.checkout) {
+    background: #F5F5F5 !important;
+    color: #252525 !important;
+    border: 1px solid #EAEAEA !important;
+}
+
+/* Checkout button */
+.elementor-menu-cart__main .woocommerce-mini-cart__buttons .checkout {
+    background: #F68B1E !important;
+    color: #FFFFFF !important;
+    border: 1px solid #F68B1E !important;
+}
+
+/* Button hover */
+.elementor-menu-cart__main .woocommerce-mini-cart__buttons .button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   MOBILE CART ADJUSTMENTS
+========================================== */
+
+@media (max-width: 767px) {
+
+    .elementor-menu-cart__main {
+        padding: 18px !important;
+    }
+
+    .elementor-menu-cart__main .mini_cart_item {
+        gap: 11px;
+        padding: 14px 0 !important;
+    }
+
+    .elementor-menu-cart__main .wpr-mini-cart-image {
+        flex: 0 0 60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .elementor-menu-cart__main .wpr-mini-cart-name {
+        font-size: 12px;
+    }
+
+    .elementor-menu-cart__main .wpr-mini-cart-quantity {
+        font-size: 11px;
+    }
+
+    .elementor-menu-cart__main .wpr-mini-cart-quantity .amount {
+        font-size: 12px;
+    }
+
+    .elementor-menu-cart__main .woocommerce-mini-cart__total .amount {
+        font-size: 16px;
+    }
+
+    .elementor-menu-cart__main .woocommerce-mini-cart__buttons .button {
+        min-height: 46px;
+    }
+}
