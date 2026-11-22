@@ -1,6 +1,6 @@
 /* ==========================================
     MARKET & CO. - FIBOSEARCH REFINED
-========================================== */
+   ========================================== */
 
 /* Main search wrapper */
 .dgwt-wcas-search-wrapp {
@@ -8,14 +8,17 @@
     box-shadow: none !important;
 }
 
-/* Search form */
-.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp {
+/* Search form (includes Pirx layout transparent background fix) */
+.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp,
+.dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp {
     position: relative !important;
     background: transparent !important;
     border: none !important;
+    padding: 0 !important;
 }
 
 /* Search input - padding for button on RIGHT */
+.dgwt-wcas-search-wrapp input[type="search"].dgwt-wcas-search-input,
 .dgwt-wcas-search-wrapp input.dgwt-wcas-search-input {
     width: 100% !important;
     height: 48px !important;
@@ -23,47 +26,54 @@
     background: #FFFFFF !important;
     color: #424650 !important;
     border: 1px solid #0B4225 !important;
-    border-radius: 20px !important;
-    padding: 0 85px 0 16px !important; /* 85px space on RIGHT for button, 16px on LEFT */
+    border-radius: 24px !important;
+    padding: 0 56px 0 18px !important;
     font-size: 14px !important;
     font-weight: 400 !important;
     box-shadow: none !important;
     outline: none !important;
     transition: none !important;
+    margin: 0 !important;
 }
 
-/* Search button - FORCED TO RIGHT SIDE */
+/* Remove default FiboSearch submit button triangle */
+.dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Search button - CENTERED ON RIGHT SIDE */
 .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit,
-.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit {
+.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp button[type="submit"].dgwt-wcas-search-submit {
     position: absolute !important;
     left: auto !important;
-    right: 0 !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    transform: none !important;
-
-    width: 48px !important;
-    height: 48px !important;
-
+    right: 4px !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-
     padding: 0 !important;
     margin: 0 !important;
-
     background: transparent !important;
     border: none !important;
-    border-radius: 0 20px 20px 0 !important;
+    border-radius: 24px !important;
     box-shadow: none !important;
 }
 
-/* Icon */
+/* Icon alignment & color */
 .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit svg {
-    width: 19px !important;
-    height: 19px !important;
+    position: static !important;
+    width: 18px !important;
+    height: 18px !important;
     fill: #0B4225 !important;
     color: #0B4225 !important;
+    margin: 0 !important;
 }
 
 .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit:hover,
@@ -74,27 +84,20 @@
     opacity: 1 !important;
 }
 
-/* NO HOVER ON RESULTS */
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover,
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-selected,
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:focus,
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:active {
-    background: #FFFFFF !important;
-    background-color: #FFFFFF !important;
-    color: inherit !important;
-    box-shadow: none !important;
-    outline: none !important;
+/* Adjust clear ("X") and loader icon position so it doesn't overlap the search icon */
+.dgwt-wcas-search-wrapp .dgwt-wcas-preloader,
+.dgwt-wcas-search-wrapp .dgwt-wcas-close {
+    right: 48px !important;
 }
 
 /* ==========================================
     SEARCH SUGGESTIONS
-========================================== */
-
+   ========================================== */
 .dgwt-wcas-suggestions-wrapp {
     background: #FFFFFF !important;
     border: 1px solid #E5E7EB !important;
     border-radius: 12px !important;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
     overflow: hidden !important;
 }
 
@@ -103,7 +106,7 @@
     background: #FFFFFF !important;
 }
 
-/* NO HOVER ON RESULTS - REMOVED */
+/* NO HOVER ON RESULTS */
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover,
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-selected,
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:focus,
@@ -126,18 +129,22 @@
 
 /* ==========================================
     MOBILE
-========================================== */
-
+   ========================================== */
 @media (max-width: 767px) {
+    .dgwt-wcas-search-wrapp input[type="search"].dgwt-wcas-search-input,
     .dgwt-wcas-search-wrapp input.dgwt-wcas-search-input {
         height: 46px !important;
         min-height: 46px !important;
-        padding-left: 14px !important;
-        padding-right: 80px !important;
+        padding-left: 16px !important;
+        padding-right: 52px !important;
         font-size: 13px !important;
     }
-    .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit {
-        height: 46px !important;
-        width: 44px !important;
+
+    .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit,
+    .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp button[type="submit"].dgwt-wcas-search-submit {
+        height: 42px !important;
+        width: 42px !important;
+        min-height: 42px !important;
+        min-width: 42px !important;
     }
 }
