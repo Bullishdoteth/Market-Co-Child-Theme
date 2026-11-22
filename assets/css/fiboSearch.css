@@ -1,9 +1,8 @@
-
 /* ==========================================
-   MARKET & CO. - FIBOSEARCH CUSTOM STYLING
+    MARKET & CO. - FIBOSEARCH REFINED
 ========================================== */
 
-/* Search wrapper - transparent background */
+/* Main search wrapper */
 .dgwt-wcas-search-wrapp {
     background: transparent !important;
     box-shadow: none !important;
@@ -11,142 +10,139 @@
 
 /* Search form */
 .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp {
+    position: relative !important;
     background: transparent !important;
     border: none !important;
 }
 
 /* Search input */
-.dgwt-wcas-search-wrapp .dgwt-wcas-search-input {
+.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input {
+    width: 100% !important;
+    height: 48px !important;
+    min-height: 48px !important;
+
     background: #FFFFFF !important;
     color: #424650 !important;
-    border: 1px solid #E5E7EB !important;
-    border-radius: 6px !important;
-    box-shadow: none !important;
+
+    border: 1px solid #0B4225 !important;
+    border-radius: 12px !important;
+
+    padding: 0 85px 0 16px !important;
+
     font-size: 14px !important;
     font-weight: 400 !important;
-    padding: 12px 48px 12px 16px !important;
-    min-height: 46px;
-    transition: border-color 0.2s ease;
+
+    box-shadow: none !important;
+    outline: none !important;
+
+    transition: none !important;
 }
 
 /* Placeholder */
-.dgwt-wcas-search-wrapp .dgwt-wcas-search-input::placeholder {
+.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input::placeholder {
     color: #9298A1 !important;
-    opacity: 1;
+    opacity: 1 !important;
 }
 
-/* Input focus */
-.dgwt-wcas-search-wrapp .dgwt-wcas-search-input:focus {
+/* Remove all focus and active effects */
+.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input:focus,
+.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input:active,
+.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input:focus-visible {
     background: #FFFFFF !important;
-    border-color: #0B4225 !important;
+    border: 1px solid #0B4225 !important;
+    box-shadow: none !important;
     outline: none !important;
-    box-shadow: 0 0 0 2px rgba(11, 66, 37, 0.08) !important;
 }
 
-/* Search button */
+/* Search button positioning */
 .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit {
+    position: absolute !important;
+
+    left: auto !important;
+    right: 0 !important;
+    top: 0 !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
     background: transparent !important;
     border: none !important;
+    border-radius: 0 12px 12px 0 !important;
+
     box-shadow: none !important;
-    color: #0B4225 !important;
 }
 
 /* Search icon */
-.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit svg,
-.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit svg path {
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit svg {
+    width: 19px !important;
+    height: 19px !important;
     fill: #0B4225 !important;
     color: #0B4225 !important;
 }
 
-/* Search button hover */
-.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit:hover {
+/* Search icon hover and focus */
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit:hover,
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit:focus {
     background: transparent !important;
-    opacity: 0.75;
+    box-shadow: none !important;
+    outline: none !important;
+    opacity: 1 !important;
 }
 
-
 /* ==========================================
-   SEARCH SUGGESTIONS DROPDOWN
+   SEARCH SUGGESTIONS
 ========================================== */
 
-/* Suggestions container */
 .dgwt-wcas-suggestions-wrapp {
     background: #FFFFFF !important;
     border: 1px solid #E5E7EB !important;
-    border-radius: 8px !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-    overflow: hidden;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+    overflow: hidden !important;
 }
 
-/* Suggestions inner content */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion,
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestions {
     background: #FFFFFF !important;
 }
 
-/* Individual suggestion */
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion {
-    background: #FFFFFF !important;
-    border-bottom: 1px solid #F0F0F0 !important;
-    padding: 12px 14px !important;
-    transition: background 0.2s ease;
-}
-
-/* Suggestion hover */
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover,
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion.dgwt-wcas-suggestion-selected {
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-selected {
     background: #F7F9F7 !important;
 }
 
-/* Suggestion product name */
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-st-title {
     color: #424650 !important;
-    font-size: 13px !important;
-    font-weight: 500 !important;
 }
 
-/* Suggestion price */
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-st-price {
     color: #0B4225 !important;
-    font-size: 13px !important;
     font-weight: 600 !important;
 }
-
-/* Suggestion product image */
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-st {
-    background: #FFFFFF !important;
-}
-
-/* Suggestion links */
-.dgwt-wcas-suggestions-wrapp a {
-    text-decoration: none !important;
-}
-
-/* View all results */
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-more {
-    background: #FFFFFF !important;
-    color: #0B4225 !important;
-    font-weight: 600 !important;
-    padding: 13px !important;
-}
-
 
 /* ==========================================
-   MOBILE ADJUSTMENTS
+   MOBILE
 ========================================== */
 
 @media (max-width: 767px) {
 
-    .dgwt-wcas-search-wrapp .dgwt-wcas-search-input {
-        min-height: 44px;
+    .dgwt-wcas-search-wrapp input.dgwt-wcas-search-input {
+        height: 46px !important;
+        min-height: 46px !important;
+        padding-left: 14px !important;
+        padding-right: 80px !important;
         font-size: 13px !important;
-        padding: 10px 44px 10px 13px !important;
     }
 
-    .dgwt-wcas-suggestions-wrapp {
-        border-radius: 6px !important;
-    }
-
-    .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion {
-        padding: 10px !important;
+    .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit {
+        height: 46px !important;
+        width: 44px !important;
     }
 }
