@@ -1,0 +1,152 @@
+
+/* ==========================================
+   MARKET & CO. - FIBOSEARCH CUSTOM STYLING
+========================================== */
+
+/* Search wrapper - transparent background */
+.dgwt-wcas-search-wrapp {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Search form */
+.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Search input */
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-input {
+    background: #FFFFFF !important;
+    color: #424650 !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    padding: 12px 48px 12px 16px !important;
+    min-height: 46px;
+    transition: border-color 0.2s ease;
+}
+
+/* Placeholder */
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-input::placeholder {
+    color: #9298A1 !important;
+    opacity: 1;
+}
+
+/* Input focus */
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-input:focus {
+    background: #FFFFFF !important;
+    border-color: #0B4225 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(11, 66, 37, 0.08) !important;
+}
+
+/* Search button */
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #0B4225 !important;
+}
+
+/* Search icon */
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit svg,
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit svg path {
+    fill: #0B4225 !important;
+    color: #0B4225 !important;
+}
+
+/* Search button hover */
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit:hover {
+    background: transparent !important;
+    opacity: 0.75;
+}
+
+
+/* ==========================================
+   SEARCH SUGGESTIONS DROPDOWN
+========================================== */
+
+/* Suggestions container */
+.dgwt-wcas-suggestions-wrapp {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+    overflow: hidden;
+}
+
+/* Suggestions inner content */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestions {
+    background: #FFFFFF !important;
+}
+
+/* Individual suggestion */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion {
+    background: #FFFFFF !important;
+    border-bottom: 1px solid #F0F0F0 !important;
+    padding: 12px 14px !important;
+    transition: background 0.2s ease;
+}
+
+/* Suggestion hover */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover,
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion.dgwt-wcas-suggestion-selected {
+    background: #F7F9F7 !important;
+}
+
+/* Suggestion product name */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-st-title {
+    color: #424650 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+/* Suggestion price */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-st-price {
+    color: #0B4225 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+/* Suggestion product image */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-st {
+    background: #FFFFFF !important;
+}
+
+/* Suggestion links */
+.dgwt-wcas-suggestions-wrapp a {
+    text-decoration: none !important;
+}
+
+/* View all results */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-more {
+    background: #FFFFFF !important;
+    color: #0B4225 !important;
+    font-weight: 600 !important;
+    padding: 13px !important;
+}
+
+
+/* ==========================================
+   MOBILE ADJUSTMENTS
+========================================== */
+
+@media (max-width: 767px) {
+
+    .dgwt-wcas-search-wrapp .dgwt-wcas-search-input {
+        min-height: 44px;
+        font-size: 13px !important;
+        padding: 10px 44px 10px 13px !important;
+    }
+
+    .dgwt-wcas-suggestions-wrapp {
+        border-radius: 6px !important;
+    }
+
+    .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion {
+        padding: 10px !important;
+    }
+}
