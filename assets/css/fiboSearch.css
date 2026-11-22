@@ -15,52 +15,32 @@
     border: none !important;
 }
 
-/* Search input */
+/* Search input - padding for button on RIGHT */
 .dgwt-wcas-search-wrapp input.dgwt-wcas-search-input {
     width: 100% !important;
     height: 48px !important;
     min-height: 48px !important;
-
     background: #FFFFFF !important;
     color: #424650 !important;
-
     border: 1px solid #0B4225 !important;
-    border-radius: 12px !important;
-
-    padding: 0 85px 0 16px !important;
-
+    border-radius: 20px !important;
+    padding: 0 85px 0 16px !important; /* 85px space on RIGHT for button, 16px on LEFT */
     font-size: 14px !important;
     font-weight: 400 !important;
-
     box-shadow: none !important;
     outline: none !important;
-
     transition: none !important;
 }
 
-/* Placeholder */
-.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input::placeholder {
-    color: #9298A1 !important;
-    opacity: 1 !important;
-}
-
-/* Remove all focus and active effects */
-.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input:focus,
-.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input:active,
-.dgwt-wcas-search-wrapp input.dgwt-wcas-search-input:focus-visible {
-    background: #FFFFFF !important;
-    border: 1px solid #0B4225 !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-/* Search button positioning */
-.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit {
+/* Search button - FORCED TO RIGHT SIDE */
+.dgwt-wcas-search-wrapp .dgwt-wcas-search-submit,
+.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit {
     position: absolute !important;
-
     left: auto !important;
     right: 0 !important;
     top: 0 !important;
+    bottom: 0 !important;
+    transform: none !important;
 
     width: 48px !important;
     height: 48px !important;
@@ -74,12 +54,11 @@
 
     background: transparent !important;
     border: none !important;
-    border-radius: 0 12px 12px 0 !important;
-
+    border-radius: 0 20px 20px 0 !important;
     box-shadow: none !important;
 }
 
-/* Search icon */
+/* Icon */
 .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit svg {
     width: 19px !important;
     height: 19px !important;
@@ -87,7 +66,6 @@
     color: #0B4225 !important;
 }
 
-/* Search icon hover and focus */
 .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit:hover,
 .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit:focus {
     background: transparent !important;
@@ -96,8 +74,20 @@
     opacity: 1 !important;
 }
 
+/* NO HOVER ON RESULTS */
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover,
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-selected,
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:focus,
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:active {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
 /* ==========================================
-   SEARCH SUGGESTIONS
+    SEARCH SUGGESTIONS
 ========================================== */
 
 .dgwt-wcas-suggestions-wrapp {
@@ -113,9 +103,16 @@
     background: #FFFFFF !important;
 }
 
+/* NO HOVER ON RESULTS - REMOVED */
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover,
-.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-selected {
-    background: #F7F9F7 !important;
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion-selected,
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:focus,
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:active {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-st-title {
@@ -128,11 +125,10 @@
 }
 
 /* ==========================================
-   MOBILE
+    MOBILE
 ========================================== */
 
 @media (max-width: 767px) {
-
     .dgwt-wcas-search-wrapp input.dgwt-wcas-search-input {
         height: 46px !important;
         min-height: 46px !important;
@@ -140,7 +136,6 @@
         padding-right: 80px !important;
         font-size: 13px !important;
     }
-
     .dgwt-wcas-search-wrapp .dgwt-wcas-search-submit {
         height: 46px !important;
         width: 44px !important;
