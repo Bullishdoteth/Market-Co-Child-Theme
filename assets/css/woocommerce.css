@@ -1,0 +1,12 @@
+/* Checkout 
+* Highlighted the login text so not signed in users can sign in*/
+
+.woocommerce-billing-fields__customer-login-label .wcf-customer-login-url {
+    color: #C96A3A !important;
+    transition: opacity 0.2s ease;
+}
+
+.woocommerce-billing-fields__customer-login-label .wcf-customer-login-url:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
