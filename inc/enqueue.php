@@ -33,6 +33,7 @@ function marketco_enqueue_assets() {
         'marketco-age-gate'    => '/assets/css/age-gate.css',
         'marketco-menu-cart'   => '/assets/css/menu-cart.css',
         'marketco-fibosearch'  => '/assets/css/fiboSearch.css',
+        'marketco-checkout'    => '/assets/css/checkout.css',
     );
 
     foreach ( $styles as $handle => $file ) {
